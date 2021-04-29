@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactEcharts from 'echarts-for-react';
-import data from './wine.json' //json data
+import data from '../wine.json' //json data
 var c=[]; // initialising the array containing the malic_acid values
 var a=0;
 var b=[]; // initialising the array containing alcohol values
@@ -16,7 +16,7 @@ console.log('avg',avg);
 
 // bar plot component
 
-const BarPlot=()=>{
+const BarPlotRes=()=>{
     return(
         <ReactEcharts
         option={{
@@ -37,6 +37,7 @@ const BarPlot=()=>{
             grid: {
               top: 100,
               bottom: 150,
+              width:210,
               tooltip: {
                 trigger: "axis",
                 axisPointer: {
@@ -92,4 +93,4 @@ const BarPlot=()=>{
       />
     )
 }
-export default BarPlot
+export default BarPlotRes

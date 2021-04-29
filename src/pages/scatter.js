@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactEcharts from 'echarts-for-react';
 import data from './wine.json'
-var a=[];
-var b=[];
-var d=[];
+var a=[]; //initialising the array containing the hue values
+var b=[]; // initialising the array containing the color_intensity values
+var d=[]; // intialising the array containing the pair of color_intensity value and hue value
 for (var i=0;i<data.data.length;i++)
 {
-          a.push(data.data[i].hue);
-          b.push(data.data[i].color_intensity);
-          var c=[data.data[i].color_intensity,data.data[i].hue];
-          d.push(c);
+          a.push(data.data[i].hue); // pushing values to the hue array
+          b.push(data.data[i].color_intensity); // pushing values to the color_intensity array
+          var c=[data.data[i].color_intensity,data.data[i].hue]; //  c array
+          d.push(c); // pushing c array to d array
 }
 console.log('d',d);
+
+// scatter plot component 
+
 const ScatterPlot=()=>{
     return(
         <ReactEcharts
@@ -50,13 +53,9 @@ const ScatterPlot=()=>{
             xAxis: [
               {
                 axisLabel: {
-                //   interval: 0,
-                //   rotate: 55,
                   textStyle: {
-                    // baseline: "top",
-                    // color: "#333",
                     fontSize: 10,
-                    // fontWeight: "bold"
+
                   }
                 },
                 axisLine: { lineStyle: { color: "#aaa" }, show: true },
@@ -90,7 +89,7 @@ const ScatterPlot=()=>{
         type: 'scatter'
     }]
         }}
-        style={{ height: "80vh", left: 50, top: 50, width: "95vw" }}
+        style={{ height: "80vh", left: 50, top: 50, width: "95vw" , bottom: 50 }}
         opts={{ renderer: "svg" }}
       />
     )
