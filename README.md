@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Wine Dataset Visualization App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 I have used JavaScript here.
