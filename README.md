@@ -13,18 +13,20 @@ I have used JavaScript here.
 ### File Structure:
 
 1. src folder -> pages folder:
+`file structure`
 <br>
---> `bar.js : contains the bar graph component for plotting 'Alcohol' on horizontal axis and average of 'Malic Acid' on the vertical axis.`
+--> bar.js : contains the bar graph component for plotting 'Alcohol' on horizontal axis and average of 'Malic Acid' on the vertical axis.
 <br>
---> `bar_responsive.js : contains the bar graph component for plotting 'Alcohol' on horizontal axis and average of 'Malic Acid' on the vertical axis but appears only in screens of width less or equal to 600px`
+--> bar_responsive.js : contains the bar graph component for plotting 'Alcohol' on horizontal axis and average of 'Malic Acid' on the vertical axis but appears only in screens of width less or equal to 600px
 <br>
---> `scatter.js : contains the scatter plot component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis. `
+--> scatter.js : contains the scatter plot component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis. 
 <br>
---> `scatter_responsive.js : contains the scatter plot graph component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis but appears only in screens of width less or equal to 600px `
+--> scatter_responsive.js : contains the scatter plot graph component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis but appears only in screens of width less or equal to 600px
 <br>
---> `scatter_responsive.js : contains the scatter plot graph component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis but appears only in screens of width between 766px and 768px`
+--> scatter_responsive.js : contains the scatter plot graph component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis but appears only in screens of width between 766px and 768px
 <br>
---> `wine.json: containing the dataset containing all the values with their respective keys. The file from where all the values are taken for plotting the bar and scatter plots. Dervied from 'wine.data` from the [Wine Dataset](https://archive.ics.uci.edu/ml/datasets/wine)
+--> wine.json: containing the dataset containing all the values with their respective keys. The file from where all the values are taken for plotting the bar and scatter plots. Dervied from 'wine.data' from the` [Wine Dataset](https://archive.ics.uci.edu/ml/datasets/wine)
+
 2. src folder -> App.js : `where both the scatter plot and the bar plot components are rendered to show it on the opening page`
 3. src folder -> index.js : `to render the App component`
 4. css files :`to style the pages`
