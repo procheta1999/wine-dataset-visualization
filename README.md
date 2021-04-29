@@ -21,9 +21,7 @@ I have used JavaScript here.
 <br>
 --> scatter.js : contains the scatter plot component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis. 
 <br>
---> scatter_responsive.js : contains the scatter plot graph component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis but appears only in screens of width less or equal to 600px
-<br>
---> scatter_responsive.js : contains the scatter plot graph component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis but appears only in screens of width between 766px and 768px
+--> scatter_responsive.js : contains the scatter plot graph component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis but appears only in screens of selevtive width. Width of the plot is passed as 'props' to the component.
 <br>
 --> wine.json: containing the dataset containing all the values with their respective keys. The file from where all the values are taken for plotting the bar and scatter plots. Dervied from 'wine.data' from the [Wine Dataset](https://archive.ics.uci.edu/ml/datasets/wine)
 
@@ -50,9 +48,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Builds the app for production to the `build` folder.\
 Your app is ready to be deployed!
+<br>
+<br>
+But in the current deployment, just after pushing the changes to the repository, the code automtically gets deployed through Netlify [https://adoring-cray-17e46a.netlify.app/](https://adoring-cray-17e46a.netlify.app/) .
 
 ## Basic overview of the work:
 1. downloaded the dataset and after changing it to json format, kept it in the `src/pages` folder.
 2. built `bar.js`, `bar_responsive.js` which is used according to screen size, for keeping the bar graph component, which I have built with Echarts for React and customized as well.
-3. built `scatter.js`, `scatter_responsive.js` , `scatter_responsive_ipad.js`, which is used according to screen size, for keeping the scatter plot components with the help of react Echarts for React and customized it as well.
+3. built `scatter.js`, `scatter_responsive.js` which is used according to screen size, for keeping the scatter plot components with the help of Echarts for React and customized it as well.
 4. render the graph components in `App.js` . 

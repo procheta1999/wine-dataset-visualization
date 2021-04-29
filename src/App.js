@@ -3,7 +3,7 @@ import ScatterPlot from './pages/scatter' // ScatterPlot component
 import BarPlot from './pages/bar'; // BarPlot component
 import ScatterPlotRes from './pages/responsive/scatter_reponsive';
 import BarPlotRes from './pages/responsive/bar_responsive';
-import ScatterPlotResIpad from './pages/responsive/scatter_responsive_ipad';
+
 
 function App() {
   return (
@@ -14,10 +14,13 @@ function App() {
         </div>
         <br></br>
         <div id="scatterplot" style={{marginTop:"50px"}}>
-<ScatterPlotRes/>
+<ScatterPlotRes width="205"/>
+        </div>
+        <div id="iphone">
+          <ScatterPlotRes width="176"/>
         </div>
         <div id="ipad">
-          <ScatterPlotResIpad/>
+          <ScatterPlotRes width="500"/>
         </div>
         <div id="space"></div>
         <div id="bar">

@@ -13,6 +13,12 @@
     margin-left: -49px;
     display:none;
 }
+#iphone{
+  width:300px;
+    height:300px;
+    margin-left: -49px;
+    display:none;
+}
 #scatterplot{
   width:300px;
     height:300px;
@@ -68,6 +74,17 @@
     display: block !important;
   }
   #scatter{
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 316px) and (max-width: 322px) {
+  #iphone{
+    display: block !important;
+  }
+  #scatter{
+    display: none !important;
+  }
+  #scatterplot{
     display: none !important;
   }
 }

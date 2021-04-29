@@ -15,7 +15,7 @@ console.log('d',d);
 
 // scatter plot component 
 
-const ScatterPlotRes=()=>{
+const ScatterPlotRes= props =>{
     return(
         <ReactEcharts
         option={{
@@ -37,7 +37,7 @@ const ScatterPlotRes=()=>{
             grid: {
               top: 100,
               bottom: 150,
-              width:176,
+              width: props.width,
               tooltip: {
                 trigger: "axis",
                 axisPointer: {
