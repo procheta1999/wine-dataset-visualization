@@ -17,11 +17,11 @@ I have used JavaScript here.
 <br>
 --> bar.js : contains the bar graph component for plotting 'Alcohol' on horizontal axis and average of 'Malic Acid' on the vertical axis.
 <br>
---> bar_responsive.js : contains the bar graph component for plotting 'Alcohol' on horizontal axis and average of 'Malic Acid' on the vertical axis but appears only in screens of width less or equal to 600px
+--> bar_responsive.js (in responsive folder) : contains the bar graph component for plotting 'Alcohol' on horizontal axis and average of 'Malic Acid' on the vertical axis but appears only in screens of width less or equal to 600px
 <br>
 --> scatter.js : contains the scatter plot component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis. 
 <br>
---> scatter_responsive.js : contains the scatter plot graph component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis but appears only in screens of selevtive width. Width of the plot is passed as 'props' to the component.
+--> scatter_responsive.js (in responsive folder) : contains the scatter plot graph component for plotting 'Color Intensity' on horizontal axis and 'Hue' on the vertical axis but appears only in screens of selevtive width. Width of the plot is passed as 'props' to the component.
 <br>
 --> wine.json: containing the dataset containing all the values with their respective keys. The file from where all the values are taken for plotting the bar and scatter plots. Dervied from 'wine.data' from the [Wine Dataset](https://archive.ics.uci.edu/ml/datasets/wine)
 
